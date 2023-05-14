@@ -1,0 +1,8 @@
+@use './src/sass/_foundation/_setting/' as s;
+
+.l-main{
+    background-color: lightyellow;
+    .l-main__inner{
+        background-color: cornflowerblue;
+    }
+}

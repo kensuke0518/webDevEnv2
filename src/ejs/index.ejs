@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%
+const meta = {
+    title: 'index.htmlです',
+    description: 'ここでサイト説明文を記入します',
+    style: `/css/index.css`
+};
+%>
+<%- include('./_include/_head.ejs', { meta }) %>
+<body>
+    <%- include('./_layout/_header.ejs') %>
+    <main class="l-main">
+        <div class="l-main__inner">
+        </div>
+    </main>
+    <%- include('./_layout/_footer.ejs') %>
+</body>
+</html>

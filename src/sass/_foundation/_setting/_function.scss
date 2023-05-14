@@ -1,0 +1,28 @@
+@use "variable" as v;
+@use "sass:math" as math;
+@use "sass:map" as map;
+
+//line-height計算
+@function getLH($fontSize, $fontHeight) {
+  @return math.div($fontHeight, $fontSize);
+}
+
+//2分の1サイズ計算
+@function getHalfPx($px) {
+  @return #{math.div($px, 2)}px;
+}
+
+//vwへの計算
+@function getVW($px, $width: v.$viewportSP) {
+  @return 1vw * math.div($px, $width) * 100;
+}
+
+//%の計算
+@function getPer($px, $width: v.$viewportSP) {
+  @return #{math.div($px, $width) * 100%};
+}
+
+//フォントサイズ%の計算
+@function getPerFontSize($px, $baseFontSize: v.$baseFontSize) {
+  @return #{math.div($px, $baseFontSize) * 100%};
+}

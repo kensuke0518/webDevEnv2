@@ -1,0 +1,31 @@
+{
+    "plugins":[
+        "stylelint-scss"
+    ],
+    "rules":{
+        "declaration-block-no-duplicate-properties": true,
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": [
+                    "use",
+                    "forward",
+                    "function",
+                    "if",
+                    "for",
+                    "each",
+                    "include",
+                    "mixin",
+                    "return",
+                    "content"
+                ]
+            }
+        ],
+        "block-no-empty": [
+            false
+        ]
+    },
+    "extends": [
+        "stylelint-config-recommended-scss"
+    ]
+}

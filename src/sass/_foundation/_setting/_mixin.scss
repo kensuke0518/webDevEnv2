@@ -1,0 +1,16 @@
+@use "variable" as v;
+@use "sass:math" as math;
+@use "sass:map" as map;
+
+//メディアクエリ
+@mixin mq($breakpoint) {
+  @media #{map.get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//margin-left:auto; margin-right:auto;
+@mixin mxAuto() {
+    margin-left: auto;
+    margin-right: auto;
+}

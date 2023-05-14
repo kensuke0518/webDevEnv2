@@ -1,0 +1,12 @@
+//vw基準値
+$viewportPC: 1280;
+$viewportSP: 750;
+
+//ベースフォントサイズ
+$baseFontSize: 14;
+
+//メディアクエリ
+$breakpoints: (
+  "sp": "screen and (max-width: 768px)",
+  "tb": "screen and (max-width: 1280px)",
+);

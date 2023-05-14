@@ -1,0 +1,54 @@
+@use './src/sass/_foundation/_setting/' as s;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @include s.mq(sp){
+        //font-size: 50%;
+    }
+}
+body{
+    //max-width: #{s.$viewportPC}px;
+    background: #fff;
+    color: #333;
+    font-family: 
+    "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "BIZ UDPGothic",
+    Meiryo,
+    sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    word-wrap:break-word;
+    overflow-wrap : break-word;
+    @include s.mq(sp){
+        //min-width: 0;
+    }
+}
+a{
+    transition: all 250ms ease;
+    color: blue;
+    text-decoration: underline;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    @include s.mq(sp){
+        width:100%;
+    }
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
